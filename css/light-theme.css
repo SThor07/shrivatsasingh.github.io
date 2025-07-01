@@ -1,0 +1,264 @@
+/* Additional light theme improvements */
+body.light-theme {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+body.light-theme section {
+    color: var(--light-text);
+    background: var(--light-bg);
+}
+
+body.light-theme p {
+    color: var(--light-text);
+    font-weight: inherit;
+}
+
+/* Improved secondary text in light theme */
+body.light-theme .section-subtitle,
+body.light-theme .project-description,
+body.light-theme .timeline-description,
+body.light-theme .contact-text p,
+body.light-theme .timeline-subtitle,
+body.light-theme label {
+    color: var(--light-text-secondary);
+    font-weight: 400;
+}
+
+/* Enhanced hero paragraph text */
+body.light-theme #hero p {
+    color: var(--light-text-secondary);
+    font-weight: 400;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+/* Enhance all section headers in light theme */
+body.light-theme .section-title {
+    color: var(--light-text);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+
+body.light-theme #hero {
+    background: var(--light-bg);
+}
+
+body.light-theme #about {
+    background: var(--light-bg);
+}
+
+body.light-theme #projects {
+    background: var(--light-bg);
+}
+
+body.light-theme #experience {
+    background: var(--light-bg);
+}
+
+body.light-theme #contact {
+    background: var(--light-bg);
+}
+
+/* Improved skill tags in light theme */
+body.light-theme .skill-tag {
+    background: var(--light-card-bg);
+    border-color: rgba(0, 0, 0, 0.08);
+    color: var(--light-text);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    font-weight: inherit;
+}
+
+body.light-theme .skill-tag:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    box-shadow: 0 2px 5px rgba(139, 92, 246, 0.3);
+}
+
+/* Improved project tags */
+body.light-theme .project-tag {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--light-text-secondary);
+    font-weight: 500;
+}
+
+/* Enhanced buttons */
+body.light-theme .btn-outline {
+    border-color: var(--light-text-secondary);
+    color: var(--light-text);
+    font-weight: 600;
+}
+
+body.light-theme .btn-outline:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Project links */
+body.light-theme .project-link {
+    color: var(--light-text-secondary);
+}
+
+body.light-theme .project-link:hover {
+    color: var(--accent);
+}
+
+/* Footer links */
+body.light-theme .footer-link {
+    color: var(--light-text-secondary);
+    font-weight: 400;
+}
+
+body.light-theme .footer-link:hover {
+    color: var(--accent);
+    text-shadow: 0 1px 2px rgba(139, 92, 246, 0.2);
+}
+
+/* Ensure proper contrast for gradient text */
+.gradient-text {
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+body.light-theme .gradient-text {
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.1));
+    background: linear-gradient(90deg, #7c3aed, #db2777);
+    -webkit-background-clip: text;
+}
+
+/* Enhance timeline content text */
+body.light-theme .timeline-title {
+    font-weight: 600;
+    color: var(--light-text);
+}
+
+body.light-theme .timeline-subtitle {
+    font-weight: 400;
+    color: var(--accent);
+}
+
+/* Make gradient blobs more visible in light theme */
+body.light-theme .gradient-blob {
+    opacity: 0.4;
+    filter: blur(150px);
+}
+
+body.light-theme .blob-1 {
+    background: linear-gradient(
+        135deg,
+        rgba(124, 58, 237, 0.7),
+        rgba(219, 39, 119, 0.7)
+    );
+}
+
+body.light-theme .blob-2 {
+    background: linear-gradient(
+        135deg,
+        rgba(219, 39, 119, 0.7),
+        rgba(124, 58, 237, 0.7)
+    );
+}
+
+/* Improved project card in light theme */
+body.light-theme .project-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .project-card:hover {
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.2);
+}
+
+body.light-theme .project-title {
+    color: var(--light-text);
+    font-weight: 600;
+}
+
+/* Improved timeline content styling */
+body.light-theme .timeline-content {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .timeline-item:hover .timeline-content {
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.15);
+}
+
+/* Improved contact form styling */
+body.light-theme .contact-form {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme input,
+body.light-theme textarea {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    color: var(--light-text);
+}
+
+body.light-theme input:focus,
+body.light-theme textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.1);
+    outline: none;
+}
+
+body.light-theme label {
+    color: var(--light-text);
+    font-weight: 400;
+}
+
+/* Contact section icons */
+body.light-theme .contact-icon {
+    background: linear-gradient(
+        135deg,
+        rgba(124, 58, 237, 0.1),
+        rgba(219, 39, 119, 0.1)
+    );
+    color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .contact-item {
+    color: var(--light-text); /* Ensure text color is consistent */
+}
+
+body.light-theme .contact-item:hover {
+    background: rgba(0, 0, 0, 0.02);
+    border-color: rgba(0, 0, 0, 0.05);
+    transform: translateY(-5px);
+}
+
+body.light-theme .contact-item:hover .contact-icon {
+    background: var(--accent);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+}
+
+/* Enhanced button styling */
+body.light-theme .btn-primary {
+    background: linear-gradient(90deg, #7c3aed, #db2777);
+    box-shadow: 0 4px 10px rgba(139, 92, 246, 0.2);
+}
+
+body.light-theme .btn-primary:hover {
+    box-shadow: 0 6px 15px rgba(139, 92, 246, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Footer styling enhancement */
+body.light-theme .footer-socials a {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    color: var(--light-text-secondary);
+}
+
+body.light-theme .footer-socials a:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+    border-color: var(--accent);
+}

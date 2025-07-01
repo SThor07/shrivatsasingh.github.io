@@ -1,0 +1,215 @@
+/* Form validation styles */
+
+/* Input styling */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding-right: 2.5rem; /* Space for icon */
+    transition: all 0.3s ease;
+}
+
+/* Validation icon base styles */
+.validation-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    display: none; /* Hidden by default */
+}
+
+/* Special positioning for textarea icons */
+textarea ~ .validation-icon {
+    top: 1.5rem;
+    transform: none;
+}
+
+/* Show icons based on input state */
+.is-valid ~ .valid-icon,
+.is-invalid ~ .invalid-icon {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Valid state */
+.is-valid {
+    border-color: #28a745 !important;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.1);
+}
+
+/* Invalid state */
+.is-invalid {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.1);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Error message styling */
+.validation-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #dc3545;
+    transition: all 0.3s ease;
+    opacity: 0;
+    min-height: 1.25rem; /* Ensure consistent spacing */
+}
+
+.validation-feedback:not(:empty) {
+    opacity: 1;
+    animation: fadeIn 0.3s ease 0.1s forwards;
+}
+
+/* Form status messages */
+.form-status {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+    display: none; /* Hide by default */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-status:not(:empty) {
+    display: block;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.success-message {
+    background-color: rgba(40, 167, 69, 0.1);
+    border: 1px solid rgba(40, 167, 69, 0.2);
+    color: #28a745;
+}
+
+.error-message {
+    background-color: rgba(220, 53, 69, 0.05);
+    border: 1px solid rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+}
+
+/* Light theme adjustments */
+body.light-theme .is-valid {
+    background-color: rgba(40, 167, 69, 0.05);
+}
+
+body.light-theme .is-invalid {
+    background-color: rgba(220, 53, 69, 0.05);
+}
+
+/* Dark theme specific adjustments */
+body:not(.light-theme) .is-valid {
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+body:not(.light-theme) .is-invalid {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Spinner animation for submit button */
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-spinner {
+    animation: spinner 1s linear infinite;
+}
+
+/* Improve focus state for inputs */
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25) !important;
+}
+
+/* Disable styling for button */
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Custom styling for form elements in both themes */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Fallback for browsers that don't support :has() */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent) !important;
+}
+
+/* Label focus styling using :has() for modern browsers */
+@supports selector(:has(*)) {
+    .form-group label:has(+ .input-wrapper > input:focus),
+    .form-group label:has(+ .input-wrapper > textarea:focus) {
+        color: var(--accent);
+    }
+}
+
+/* Animated focus effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent) !important;
+    transition: all 0.3s ease;
+}
+
+/* Ensure submit button has proper styling on hover */
+.btn-primary:hover:not(:disabled) {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+}
+
+/* Responsive adjustments for form validation */
+@media (max-width: 768px) {
+    .validation-icon {
+        width: 16px;
+        height: 16px;
+        right: 10px;
+    }
+
+    .validation-feedback {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-status {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}

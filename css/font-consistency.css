@@ -1,0 +1,61 @@
+/* Font consistency between light and dark themes */
+
+/* Base font settings */
+body {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure light theme has identical font rendering */
+body.light-theme {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Consistent font weights */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+p,
+span,
+div,
+li,
+a {
+    font-weight: 400;
+}
+
+/* Button text consistency */
+.btn {
+    font-weight: 600;
+}
+
+/* Navigation links */
+nav ul li a {
+    font-weight: 500;
+}
+
+/* Section subtitles */
+.section-subtitle,
+.project-description,
+.timeline-description,
+.contact-text p,
+.timeline-subtitle {
+    font-weight: 400;
+}
+
+/* Fix for any font rendering differences in Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    body,
+    body.light-theme {
+        -webkit-text-size-adjust: 100%;
+    }
+}

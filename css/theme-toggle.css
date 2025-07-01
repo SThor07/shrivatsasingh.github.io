@@ -1,0 +1,162 @@
+/* Ensure consistent font sizing during theme transitions */
+body,
+body.light-theme {
+    font-size: 16px; /* Base font size */
+}
+
+/* Theme toggle button styling */
+.theme-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: var(--text);
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+    border-radius: 50%;
+    margin: 0;
+}
+
+.theme-toggle:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Style for active theme toggle when system theme is disabled */
+.theme-toggle.active {
+    background: linear-gradient(45deg, var(--accent), var(--accent2));
+    color: white !important; /* Force white color for both themes */
+}
+
+.theme-toggle.active:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.theme-toggle .fa-sun {
+    display: none;
+}
+
+body.light-theme .theme-toggle .fa-moon {
+    display: none;
+}
+
+body.light-theme .theme-toggle .fa-sun {
+    display: inline-block;
+    color: var(--light-text);
+}
+
+body.light-theme .theme-toggle {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--light-text);
+}
+
+body.light-theme .theme-toggle:hover {
+    color: var(--accent);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure active class overrides any theme-specific styles */
+body.light-theme .theme-toggle.active {
+    background: linear-gradient(45deg, var(--accent), var(--accent2));
+    color: white !important;
+}
+
+.theme-toggle.hidden {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Enhanced theme toggle styling */
+.theme-toggle-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle-pill {
+    display: flex;
+    align-items: center;
+    background: var(--card-bg);
+    border-radius: 2rem;
+    padding: 0.4rem 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    height: 40px;
+}
+
+body.light-theme .theme-toggle-pill {
+    background: var(--light-card-bg);
+    border-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.theme-toggle-divider {
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 0.5rem;
+}
+
+body.light-theme .theme-toggle-divider {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.system-theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0 0.5rem;
+    height: 100%;
+    margin: 0;
+}
+
+.system-theme-toggle:hover {
+    color: var(--text);
+}
+
+body.light-theme .system-theme-toggle {
+    color: var(--light-text-secondary);
+}
+
+body.light-theme .system-theme-toggle:hover {
+    color: var(--light-text);
+}
+
+.system-theme-toggle input {
+    display: none;
+}
+
+.toggle-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+body.light-theme .toggle-icon {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.system-theme-toggle input:checked + .toggle-icon {
+    background: linear-gradient(45deg, var(--accent), var(--accent2));
+    color: white;
+}

@@ -1,0 +1,343 @@
+/* ANIMATIONS */
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+    opacity: 0;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+.fade-in-left {
+    animation: fadeInLeft 0.8s ease forwards;
+    opacity: 0;
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* New creative animations */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-15deg) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Apply new animations */
+.rotate-in {
+    animation: rotateIn 0.8s ease forwards;
+}
+
+.pulse-glow {
+    animation: pulseGlow 3s infinite;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+.gradient-shift {
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease infinite;
+}
+
+/* Floating animation for skill tags */
+@keyframes float-mini {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.skill-tag:hover {
+    animation: float-mini 1.5s ease infinite;
+}
+
+/* Creative hover effects */
+.creative-hover {
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.creative-hover::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.creative-hover:hover::before {
+    width: 100%;
+}
+
+/* Particle effect for hero section */
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(139, 92, 246, 0.3);
+    pointer-events: none;
+}
+
+/* Typing cursor animation */
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background-color: currentColor;
+    margin-left: 5px;
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+}
+
+/* Timeline date circle animations */
+@keyframes fadeInCircleLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(20px) scale(0.6);
+    }
+    70% {
+        opacity: 0.9;
+        transform: translateX(-5px) scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes fadeInCircleRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px) scale(0.6);
+    }
+    70% {
+        opacity: 0.9;
+        transform: translateX(5px) scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* 3D tilt effect for cards */
+.tilt-effect {
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.tilt-effect:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(5deg) scale(1.03);
+}
+
+/* Section header animations */
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientTextReveal {
+    0% {
+        opacity: 0;
+        background-size: 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        filter: blur(4px);
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        background-size: 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
+@keyframes borderReveal {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 70px;
+        opacity: 1;
+    }
+}
+
+.slide-in-bottom {
+    animation: slideInFromBottom 0.8s ease forwards;
+    opacity: 0;
+}
+
+.gradient-text-reveal {
+    animation: gradientTextReveal 1s ease forwards;
+    opacity: 0;
+}
+
+.border-reveal {
+    position: relative;
+}
+
+.border-reveal::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    opacity: 0;
+    animation: borderReveal 0.8s ease forwards;
+    animation-delay: 0.4s;
+    animation-play-state: var(--header-animate);
+}
+
+/* Add staggered subtitle animation */
+@keyframes fadeSubtitle {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+
+.fade-subtitle {
+    animation: fadeSubtitle 0.8s ease forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+:root {
+    --header-animate: paused;
+}

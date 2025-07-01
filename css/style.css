@@ -1,0 +1,287 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0b0c10;
+  color: #ffffff;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+a {
+  color: #66fcf1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #45a29e;
+}
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #66fcf1;
+  color: #0b0c10;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0.5rem;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #45a29e;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+#hero canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+.hero-content p {
+  font-size: 1.25rem;
+  color: #c5c6c7;
+  margin-bottom: 2rem;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+.profile-photo {
+  flex: 1 1 200px;
+  min-height: 200px;
+  background: url('profile.jpg') center/cover no-repeat;
+  border-radius: 50%;
+  border: 4px solid #66fcf1;
+}
+.about-text {
+  flex: 2 1 300px;
+}
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.stats div {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+}
+.stats span {
+  font-size: 1.5rem;
+  color: #66fcf1;
+}
+
+/* Skills Cloud */
+#skills {
+  text-align: center;
+}
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.skill {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+}
+.skill:hover {
+  transform: scale(1.1);
+  background: #66fcf1;
+  color: #0b0c10;
+}
+
+/* Projects Constellation */
+#projects {
+  text-align: center;
+}
+.constellation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.star {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.25rem;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.star:hover {
+  transform: scale(1.15);
+  background: #66fcf1;
+  color: #0b0c10;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11,12,16,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.modal.hidden {
+  display: none;
+}
+.modal-content {
+  background: #1f2833;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+}
+.modal-content .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Experience Section */
+.orbit-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.experience-card {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+  transition: transform 0.3s;
+}
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Education Section */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.milestone {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-left: 4px solid #66fcf1;
+  border-radius: 4px;
+}
+
+/* Achievements Section */
+.counters {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.counters div {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.counters span {
+  font-size: 1.5rem;
+  color: #66fcf1;
+}
+
+/* Contact Section */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+#contact input,
+#contact textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+}
+#contact button {
+  padding: 0.75rem;
+  background: #66fcf1;
+  color: #0b0c10;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#contact button:hover {
+  background: #45a29e;
+}
+.contact-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+.contact-links a {
+  margin: 0 1rem;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(255,255,255,0.1);
+  padding: 0.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+}
+#theme-toggle span {
+  font-size: 1.2rem;
+}
