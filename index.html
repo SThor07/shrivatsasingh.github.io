@@ -1,565 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Shrivatsasingh Rathore | Portfolio</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-            rel="stylesheet"
-        />
-        <!-- Modular CSS -->
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/sections.css" />
-        <link rel="stylesheet" href="css/theme-toggle.css" />
-        <link rel="stylesheet" href="css/animations.css" />
-        <link rel="stylesheet" href="css/responsive.css" />
-        <link rel="stylesheet" href="css/light-theme.css" />
-        <link rel="stylesheet" href="css/font-consistency.css" />
-        <link rel="stylesheet" href="css/form-validation.css" />
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav id="navbar">
-            <a href="#hero" class="logo">
-                <span class="logo-icon"><i class="fas fa-code"></i></span>
-                <span class="logo-text">Shrivatsasingh Rathore</span>
-            </a>
-            <div class="nav-right">
-                <div class="theme-toggle-container">
-                    <div class="theme-toggle-pill">
-                        <button
-                            id="themeToggle"
-                            class="theme-toggle"
-                            aria-label="Toggle dark/light theme"
-                        >
-                            <i class="fas fa-moon"></i>
-                            <i class="fas fa-sun"></i>
-                        </button>
-                        <div class="theme-toggle-divider"></div>
-                        <label class="system-theme-toggle">
-                            <input
-                                type="checkbox"
-                                id="systemThemeToggle"
-                                checked
-                            />
-                            <span class="toggle-icon"
-                                ><i class="fas fa-laptop"></i
-                            ></span>
-                            <span class="toggle-label">Follow system</span>
-                        </label>
-                    </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrivatsasingh Rathore | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/theme-toggle.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/light-theme.css" />
+    <link rel="stylesheet" href="css/font-consistency.css" />
+    <link rel="stylesheet" href="css/form-validation.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#hero" class="logo">
+            <span class="logo-icon"><i class="fas fa-code"></i></span>
+            <span class="logo-text">Shrivatsasingh Rathore</span>
+        </a>
+        <div class="nav-right">
+            <div class="theme-toggle-container">
+                <div class="theme-toggle-pill">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <div class="theme-toggle-divider"></div>
+                    <label class="system-theme-toggle">
+                        <input type="checkbox" id="systemThemeToggle" checked />
+                        <span class="toggle-icon"><i class="fas fa-laptop"></i></span>
+                        <span class="toggle-label">Follow system</span>
+                    </label>
                 </div>
-                <button class="menu" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
             </div>
-            <ul>
-                <li>
-                    <a href="#about" class="nav-link creative-hover">About</a>
-                </li>
-                <li>
-                    <a href="#projects" class="nav-link creative-hover"
-                        >Projects</a
-                    >
-                </li>
-                <li>
-                    <a href="#experience" class="nav-link creative-hover"
-                        >Experience</a
-                    >
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link creative-hover"
-                        >Contact</a
-                    >
-                </li>
-            </ul>
-        </nav>
+            <button class="menu" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <ul>
+            <li>
+                <a href="#about" class="nav-link creative-hover">About</a>
+            </li>
+            <li>
+                <a href="#projects" class="nav-link creative-hover">Projects</a>
+            </li>
+            <li>
+                <a href="#experience" class="nav-link creative-hover">Experience</a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link creative-hover">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-        <main>
-            <!-- Hero Section -->
-            <section id="hero">
-                <div class="gradient-blob blob-1 gradient-shift"></div>
-                <div class="gradient-blob blob-2 gradient-shift"></div>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="gradient-blob blob-1 gradient-shift"></div>
+            <div class="gradient-blob blob-2 gradient-shift"></div>
 
-                <h1 class="fade-in">
-                    Hi, I'm <span class="gradient-text">Shrivatsasingh Rathore</span>
-                </h1>
-                <p class="fade-in-up" style="animation-delay: 0.2s">
-                    Lifelong Learner and Tech Creator exploring the frontiers of machine learning and intelligent systems.
+            <h1 class="fade-in">
+                Hi, I'm <span class="gradient-text">Shrivatsasingh Rathore</span>
+            </h1>
+            <p class="fade-in-up" style="animation-delay: 0.2s">
+                Lifelong Learner and Tech Creator exploring the frontiers of machine learning and intelligent systems.
+            </p>
+
+            <div class="btn-group fade-in-up" style="animation-delay: 0.4s">
+                <a href="#projects" class="btn btn-primary pulse-glow">
+                    <i class="fas fa-code"></i> View My Work
+                </a>
+                <a href="files/Shrivatsasingh_Rathore_Resume.pdf" class="btn btn-outline" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+
+            <div class="socials fade-in" style="animation-delay: 0.6s">
+                <a href="https://github.com/SThor07" target="_blank" aria-label="GitHub" class="icon-contrast"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shrivatsasingh-rathore/" target="_blank" aria-label="LinkedIn"
+                    class="icon-contrast"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:srathor9@asu.edu" aria-label="Email" class="icon-contrast"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-header slide-in-bottom">
+                <h2 class="section-title gradient-text border-reveal gradient-text-reveal">
+                    About Me
+                </h2>
+            </div>
+
+            <div class="about-text fade-in-left">
+                <p>
+                    I’m a Master’s student in Data Science, Analytics, and Engineering at Arizona State University with
+                    a strong
+                    foundation in software development, data engineering, and machine learning. My work focuses on
+                    building
+                    scalable, reliable systems that transform raw, complex data into actionable insights and
+                    production-ready
+                    solutions with real-world impact.
+                </p>
+                <p>
+                    Driven by curiosity and a passion for problem-solving, I’ve developed systems ranging from
+                    LLM-powered
+                    autonomous testing frameworks and retrieval-augmented chatbots to graph-based crime hotspot
+                    prediction and
+                    intelligent recommendation platforms. Across academic and industry roles, I’ve designed cloud-based
+                    databases,
+                    built APIs, automated data workflows, and developed dashboards that significantly reduced manual
+                    effort and
+                    improved performance and usability.
+
+                    I enjoy bridging software engineering and data science by combining clean system design, explainable
+                    models,
+                    and automation. I’m particularly interested in applying AI, NLP, distributed systems, and data
+                    visualization
+                    to solve meaningful problems, and I’m always eager to collaborate on projects that push products
+                    from concept
+                    to impact.
                 </p>
 
-                <div class="btn-group fade-in-up" style="animation-delay: 0.4s">
-                    <a href="#projects" class="btn btn-primary pulse-glow">
-                        <i class="fas fa-code"></i> View My Work
+
+
+
+
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">Data Science</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">LLM Development</span>
+                    <span class="skill-tag">Artificial Intelligence</span>
+                    <span class="skill-tag">Natural Language Processing</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="about-image fade-in-right">
+                <img src="images/profile-circular.png" alt="Shrivatsasingh Rathore" class="fade-in"
+                    style="animation-delay: 0.2s" />
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-header slide-in-bottom">
+                <h2 class="section-title gradient-text border-reveal gradient-text-reveal">
+                    Featured Projects
+                </h2>
+                <p class="section-subtitle fade-subtitle">
+                    A Collection of my Work
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+
+                <!-- Project 1 -->
+                <div class="project-card fade-in-up" style="animation-delay: 0.2s">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            AutoDroid_QA: Autonomous Mobile QA System
+                        </h3>
+                        <p class="project-description">
+                            Built an LLM-powered, multi-agent system to autonomously test Android applications
+                            end-to-end, including
+                            goal planning, UI interaction, verification, and reporting. Engineered four modular AI
+                            agents—Planner,
+                            Executor, Verifier, and Supervisor—to enable seamless coordination through natural language
+                            interfaces
+                            using Ollama, AndroidEnv, and custom agent orchestration.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">LLM Agents</span>
+                            <span class="project-tag">Ollama</span>
+                            <span class="project-tag">Android QA</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/SThor07/AutoDroid_QA" class="project-link"
+                                aria-label="GitHub repository">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-in-up" style="animation-delay: 0.3s">
+                    <div class="project-image">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            F1 RAG Chatbot
+                        </h3>
+                        <p class="project-description">
+                            Developed a Retrieval-Augmented Generation chatbot enabling real-time question answering
+                            over structured
+                            Formula 1 data. Integrated LangChain.js, Next.js, OpenAI embeddings, and DataStax Astra DB
+                            to deliver fast,
+                            context-aware responses, deployed on Vercel for production use.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">RAG</span>
+                            <span class="project-tag">LangChain.js</span>
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">Vector Database</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/SThor07/F1bot-Fast-and-Better"
+                                class="project-link" aria-label="GitHub repository">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 3 -->
+
+                <div class="project-card fade-in-up" style="animation-delay: 0.1s">
+                    <div class="project-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            Smart Book Recommendation System
+                        </h3>
+                        <p class="project-description">
+                            Developed an interactive recommendation system using Gradio, LangChain, and OpenAI
+                            embeddings to deliver personalized book suggestions. Achieved 78% accuracy and reduced query
+                            processing time by 40%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">LLM Integration</span>
+                            <span class="project-tag">Vector search</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/SThor07/Smart_Book-Recommender"
+                                class="project-link" aria-label="GitHub repository">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-in-up" style="animation-delay: 0.2s">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            Augmented Analytics Platform
+                        </h3>
+                        <p class="project-description">
+                            Built an interactive analytics dashboard automating insights across 10,000+ retail
+                            transactions. Enabled real-time KPI visualization and dynamic filtering, reducing manual
+                            analysis time by 80%.
+                        </p>
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Streamlit</span>
+                            <span class="project-tag">Data Visualization</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/SThor07/augmented-analysis-retail"
+                                class="project-link" aria-label="GitHub repository">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card fade-in-up" style="animation-delay: 0.3s">
+                    <div class="project-image">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            Crime Pattern Detection with GNNs & Spatiotemporal Modeling
+                        </h3>
+                        <p class="project-description">
+                            Developed a predictive analytics pipeline using graph neural networks and spatiotemporal
+                            features to identify urban crime hotspots. Leveraged real geospatial datasets to support
+                            smarter law enforcement resource allocation and proactive crime prevention.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Graph Neural Networks</span>
+                            <span class="project-tag">Spatiotemporal Modeling</span>
+                            <span class="project-tag">Geospatial Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/SThor07/crime_pattern_detection"
+                                class="project-link" aria-label="GitHub repository">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header slide-in-bottom">
+                <h2 class="section-title gradient-text border-reveal gradient-text-reveal">
+                    Experience
+                </h2>
+                <p class="section-subtitle fade-subtitle">
+                    My Professional Journey
+                </p>
+            </div>
+
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content fade-in-right">
+                        <h3 class="timeline-title">
+                            Software Developer Intern
+                        </h3>
+                        <p class="timeline-subtitle">
+                            Superstars Inc
+                        </p>
+                        <p class="timeline-description">
+                            Designed and developed a cross-platform mobile application using Flutter and Dart, supported
+                            by HTML/CSS and JavaScript, to deliver a scalable, user-centered search experience.
+                            Implemented a unified, multi-tab search architecture (People, Media, Jobs, All) to enhance
+                            UI/UX consistency, content discoverability, and navigation efficiency. Integrated frontend
+                            components with backend services by extending search APIs and data models, enabling
+                            real-time querying, media retrieval, and optimized performance through debounced search,
+                            cached network images, and asynchronous state management. Strengthened application
+                            reliability and usability by resolving UI state and navigation bugs, validating APIs with
+                            Postman, and collaborating in agile sprints with product leaders and engineers to deliver
+                            high-quality, production-ready features.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content fade-in-left">
+                        <h3 class="timeline-title">
+                            Research Assistant
+                        </h3>
+                        <p class="timeline-subtitle">Pune University</p>
+                        <p class="timeline-description">
+                            Engineered a cloud-based database system to accelerate research data retrieval by 40%,
+                            advancing the lab’s analytic capabilities.
+                            Developed RESTful APIs and automated processing pipelines, increasing reliability and
+                            reducing manual work for research teams.
+                            Leveraged predictive modeling to surface key customer data trends, enhancing decision
+                            accuracy and research outcomes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content fade-in-right">
+                        <h3 class="timeline-title">Engineering Intern</h3>
+                        <p class="timeline-subtitle">Bajaj Auto Lmt</p>
+                        <p class="timeline-description">
+                            Analyzed financial performance and uncovered key profitability drivers, directly influencing
+                            operational improvements and boosting revenue by 15%.
+                            Built interactive Power BI dashboards and automated data pipelines, reducing reporting
+                            inefficiencies and manual workload by over 30%.
+                            Collaborated across teams to transform business metrics into actionable insights for
+                            strategic decision-making.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-header slide-in-bottom">
+                <h2 class="section-title gradient-text border-reveal gradient-text-reveal">
+                    Get In Touch
+                </h2>
+                <p class="section-subtitle fade-subtitle">
+                    Have a project in mind or want to collaborate?
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <a href="mailto:srathor9@asu.edu" class="contact-item fade-in-left"
+                        aria-label="Send email to Shrivatsasingh">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p class="email-address">
+                                srathor9@asu.edu
+                            </p>
+                        </div>
                     </a>
-                    <a
-                        href="files/Shrivatsasingh_Rathore_Resume.pdf"
-                        class="btn btn-outline"
-                        download
-                    >
-                        <i class="fas fa-download"></i> Download Resume
+
+                    <a href="https://maps.app.goo.gl/rNQfeZU16h4r17Hz8" target="_blank" rel="noopener"
+                        class="contact-item fade-in-left" aria-label="View location on map">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Arizona</p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+14807037417" class="contact-item fade-in-left" aria-label="Call Shrivatsasingh">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+1 (480) 703-7417</p>
+                        </div>
                     </a>
                 </div>
 
-                <div class="socials fade-in" style="animation-delay: 0.6s">
-                    <a
-                        href="https://github.com/SThor07"
-                        target="_blank"
-                        aria-label="GitHub"
-                        class="icon-contrast"
-                        ><i class="fab fa-github"></i
-                    ></a>
-                    <a
-                        href="https://www.linkedin.com/in/shrivatsasingh-rathore/"
-                        target="_blank"
-                        aria-label="LinkedIn"
-                        class="icon-contrast"
-                        ><i class="fab fa-linkedin"></i
-                    ></a>
-                    <a
-                        href="mailto:srathor9@asu.edu"
-                        aria-label="Email"
-                        class="icon-contrast"
-                        ><i class="fas fa-envelope"></i
-                    ></a>
-                </div>
-            </section>
-
-            <!-- About Section -->
-            <section id="about">
-                <div class="section-header slide-in-bottom">
-                    <h2
-                        class="section-title gradient-text border-reveal gradient-text-reveal"
-                    >
-                        About Me
-                    </h2>
-                </div>
-
-                <div class="about-text fade-in-left">
-                    <p>
-                        I'm a Master's student in Data Science at Arizona State University with a strong foundation in analytics, machine learning, and modern data engineering.
-                      My work focuses on transforming raw, complex data into actionable insights and building practical solutions that bridge the gap between advanced AI and real-world impact.
-                    </p>
-                    <p>
-                        Driven by curiosity and a passion for innovation, I've developed systems that range from urban crime hotspot prediction with graph neural networks to forecasting rideshare demand and designing intelligent recommendation platforms.
-
-In past roles, I've implemented cloud-based databases, automated reporting workflows, and built interactive dashboards that reduced manual effort by up to 80%. I enjoy blending thoughtful design, explainable models, and automation to make technology more accessible and effective.
-
-I'm particularly interested in applying AI, NLP, and data visualization to solve meaningful problems, and I'm always eager to learn and collaborate on projects that push the boundaries of what's possible.
-
-
-                    </p>
-
-                    <div class="skills">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">Data Science</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">LLM Development</span>
-                        <span class="skill-tag">Artificial Intelligence</span>
-                        <span class="skill-tag">Natural Language Processing</span>
-                        <span class="skill-tag">Data Visualization</span>
-                        <span class="skill-tag">JavaScript</span>
-                    </div>
-                </div>
-
-                <div class="about-image fade-in-right">
-                    <img
-                        src="images/profile-circular.png"
-                        alt="Shrivatsasingh Rathore"
-                        class="fade-in"
-                        style="animation-delay: 0.2s"
-                    />
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section id="projects">
-                <div class="section-header slide-in-bottom">
-                    <h2
-                        class="section-title gradient-text border-reveal gradient-text-reveal"
-                    >
-                        Featured Projects
-                    </h2>
-                    <p class="section-subtitle fade-subtitle">
-                        A Collection of my Work
-                    </p>
-                </div>
-
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div
-                        class="project-card fade-in-up"
-                        style="animation-delay: 0.1s"
-                    >
-                        <div class="project-image">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">
-                               Smart Book Recommendation System
-                            </h3>
-                            <p class="project-description">
-                                   Developed an interactive recommendation system using Gradio, LangChain, and OpenAI embeddings to deliver personalized book suggestions. Achieved 78% accuracy and reduced query processing time by 40%.
-                            </p>
-                            <div class="project-tags">
-                                <span class="project-tag">Python</span>
-                                <span class="project-tag">LLM Integration</span>
-                                <span class="project-tag">Vector search</span>
-                            </div>
-                            <div class="project-links">
-                                <a
-                                    target="_blank"
-                                    href="https://github.com/SThor07/Smart_Book-Recommender"
-                                    class="project-link"
-                                    aria-label="GitHub repository"
-                                >
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div
-                        class="project-card fade-in-up"
-                        style="animation-delay: 0.2s"
-                    >
-                        <div class="project-image">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">
-                                 Augmented Analytics Platform
-                            </h3>
-                            <p class="project-description">
-                                 Built an interactive analytics dashboard automating insights across 10,000+ retail transactions. Enabled real-time KPI visualization and dynamic filtering, reducing manual analysis time by 80%.
-        </p>
-                            </p>
-                            <div class="project-tags">
-                                <span class="project-tag">Streamlit</span>
-                                <span class="project-tag">Data Visualization</span>
-                                <span class="project-tag">Python</span>
-                            </div>
-                            <div class="project-links">
-                                <a
-                                    target="_blank"
-                                    href="https://github.com/SThor07/augmented-analysis-retail"
-                                    class="project-link"
-                                    aria-label="GitHub repository"
-                                >
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div
-                        class="project-card fade-in-up"
-                        style="animation-delay: 0.3s"
-                    >
-                        <div class="project-image">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">
-                                Crime Pattern Detection with GNNs & Spatiotemporal Modeling
-                            </h3>
-                            <p class="project-description">
-                                 Developed a predictive analytics pipeline using graph neural networks and spatiotemporal features to identify urban crime hotspots. Leveraged real geospatial datasets to support smarter law enforcement resource allocation and proactive crime prevention.
-                            </p>
-                            <div class="project-tags">
-                                <span class="project-tag">Graph Neural Networks</span>
-                                <span class="project-tag">Spatiotemporal Modeling</span>
-                                <span class="project-tag">Geospatial Data Analysis</span>
-                            </div>
-                            <div class="project-links">
-                                <a
-                                    target="_blank"
-                                    href="https://github.com/SThor07/crime_pattern_detection"
-                                    class="project-link"
-                                    aria-label="GitHub repository"
-                                >
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Experience Section -->
-            <section id="experience">
-                <div class="section-header slide-in-bottom">
-                    <h2
-                        class="section-title gradient-text border-reveal gradient-text-reveal"
-                    >
-                        Experience
-                    </h2>
-                    <p class="section-subtitle fade-subtitle">
-                        My Professional Journey
-                    </p>
-                </div>
-
-                <div class="timeline">
-                    <!-- Experience 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-date">2024</div>
-                        <div class="timeline-content fade-in-right">
-                            <h3 class="timeline-title">
-                                Alternative Format Text Editor & QA Engineer
-                            </h3>
-                            <p class="timeline-subtitle">
-                                Arizona State University
-                            </p>
-                            <p class="timeline-description">
-                                Transforming academic content into accessible digital formats for students with disabilities by leveraging advanced scripting, algorithm optimization, and document editing tools.
-Automate and streamline text adaptation for text-to-speech compatibility, ensuring precise, user-friendly resources.
-Conduct quality assurance with JAWS screen reader, collaborate on software debugging, and mentor new team members in accessibility best practices—driving greater inclusivity and usability across campus learning platforms.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Experience 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-date">2024</div>
-                        <div class="timeline-content fade-in-left">
-                            <h3 class="timeline-title">
-                                Research Assistant
-                            </h3>
-                            <p class="timeline-subtitle">Pune University</p>
-                            <p class="timeline-description">
-                                Engineered a cloud-based database system to accelerate research data retrieval by 40%, advancing the lab’s analytic capabilities.
-Developed RESTful APIs and automated processing pipelines, increasing reliability and reducing manual work for research teams.
-Leveraged predictive modeling to surface key customer data trends, enhancing decision accuracy and research outcomes.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Experience 3 -->
-                    <div class="timeline-item">
-                        <div class="timeline-date">2023</div>
-                        <div class="timeline-content fade-in-right">
-                            <h3 class="timeline-title">Intern</h3>
-                            <p class="timeline-subtitle">Bajaj Auto Lmt</p>
-                            <p class="timeline-description">
-                                Analyzed financial performance and uncovered key profitability drivers, directly influencing operational improvements and boosting revenue by 15%.
-Built interactive Power BI dashboards and automated data pipelines, reducing reporting inefficiencies and manual workload by over 30%.
-Collaborated across teams to transform business metrics into actionable insights for strategic decision-making.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact">
-                <div class="section-header slide-in-bottom">
-                    <h2
-                        class="section-title gradient-text border-reveal gradient-text-reveal"
-                    >
-                        Get In Touch
-                    </h2>
-                    <p class="section-subtitle fade-subtitle">
-                        Have a project in mind or want to collaborate?
-                    </p>
-                </div>
-
-                <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <a
-                            href="mailto:srathor9@asu.edu"
-                            class="contact-item fade-in-left"
-                            aria-label="Send email to Shrivatsasingh"
-                        >
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Email</h3>
-                                <p class="email-address">
-                                    srathor9@asu.edu
-                                </p>
-                            </div>
-                        </a>
-
-                        <a
-                            href="https://maps.app.goo.gl/rNQfeZU16h4r17Hz8"
-                            target="_blank"
-                            rel="noopener"
-                            class="contact-item fade-in-left"
-                            aria-label="View location on map"
-                        >
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Location</h3>
-                                <p>Arizona</p>
-                            </div>
-                        </a>
-
-                        <a
-                            href="tel:+14807037417"
-                            class="contact-item fade-in-left"
-                            aria-label="Call Shrivatsasingh"
-                        >
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Phone</h3>
-                                <p>+1 (480) 703-7417</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="contact-form fade-in-right">
-                        <form
-                            id="contactForm"
-                            action="https://formspree.io/f/xldnjpjq"
-                            method="POST"
-                        >
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        placeholder="Your name"
-                                        required
-                                        minlength="2"
-                                    />
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="subject">Subject</label>
-                                    <input
-                                        type="text"
-                                        id="subject"
-                                        name="_subject"
-                                        placeholder="Subject (optional)"
-                                    />
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="_replyto"
-                                        placeholder="Your email"
-                                        required
-                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                                        title="Please enter a valid email address"
-                                    />
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="confirm-email"
-                                        >Confirm Email</label
-                                    >
-                                    <input
-                                        type="email"
-                                        id="confirm-email"
-                                        name="confirmEmail"
-                                        placeholder="Confirm your email"
-                                        required
-                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                                        title="Please confirm your email address"
-                                    />
-                                </div>
+                <div class="contact-form fade-in-right">
+                    <form id="contactForm" action="https://formspree.io/f/xldnjpjq" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required
+                                    minlength="2" />
                             </div>
 
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    placeholder="Your message"
-                                    required
-                                    minlength="10"
-                                    rows="4"
-                                ></textarea>
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="_subject" placeholder="Subject (optional)" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="_replyto" placeholder="Your email" required
+                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                    title="Please enter a valid email address" />
                             </div>
 
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane"></i> Send Message
-                            </button>
-                        </form>
-                    </div>
+                            <div class="form-group">
+                                <label for="confirm-email">Confirm Email</label>
+                                <input type="email" id="confirm-email" name="confirmEmail"
+                                    placeholder="Confirm your email" required
+                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                    title="Please confirm your email address" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" required minlength="10"
+                                rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
                 </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <div class="footer-content">
-                <a href="#hero" class="footer-logo">
-                    <span class="logo-icon"><i class="fas fa-code"></i></span>
-                    <span class="logo-text">Shrivatsasingh Rathore</span>
-                </a>
-
-                <ul class="footer-links">
-                    <li><a href="#about" class="footer-link">About</a></li>
-                    <li>
-                        <a href="#projects" class="footer-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#experience" class="footer-link">Experience</a>
-                    </li>
-                    <li><a href="#contact" class="footer-link">Contact</a></li>
-                </ul>
-
-                <div class="footer-socials">
-                    <a
-                        href="https://github.com/SThor07"
-                        target="_blank"
-                        aria-label="GitHub"
-                    >
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/shrivatsasingh-rathore/"
-                        target="_blank"
-                        aria-label="LinkedIn"
-                    >
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a
-                        href="mailto:srathor9@asu.edu"
-                        aria-label="Email"
-                    >
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-
-                <p class="copyright">
-                    © 2025 Shrivatsasingh Rathore. All rights reserved.
-                </p>
             </div>
-        </footer>
+        </section>
+    </main>
 
-        <!-- Modular JavaScript -->
-        <script src="js/main.js"></script>
-        <script src="js/animations.js"></script>
-        <script src="js/theme-toggle.js"></script>
-        <script src="js/creative.js"></script>
-        <script src="js/form-handler.js"></script>
-    </body>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="#hero" class="footer-logo">
+                <span class="logo-icon"><i class="fas fa-code"></i></span>
+                <span class="logo-text">Shrivatsasingh Rathore</span>
+            </a>
+
+            <ul class="footer-links">
+                <li><a href="#about" class="footer-link">About</a></li>
+                <li>
+                    <a href="#projects" class="footer-link">Projects</a>
+                </li>
+                <li>
+                    <a href="#experience" class="footer-link">Experience</a>
+                </li>
+                <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+
+            <div class="footer-socials">
+                <a href="https://github.com/SThor07" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shrivatsasingh-rathore/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:srathor9@asu.edu" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <p class="copyright">
+                © 2025 Shrivatsasingh Rathore. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modular JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/creative.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+
 </html>
